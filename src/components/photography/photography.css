@@ -1,0 +1,56 @@
+.photography__container
+{
+    display: flex;
+    width: 80%;
+    margin: 2% 10% 5% 10%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+.mySwiper
+{
+    width: 100%;
+    height: 100%;
+}
+.slider__img
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+  
+
+
+
+
+
+.swiper-wrapper {
+    transition-timing-function: linear
+}
+.swiper-slide img {
+    opacity: 0.1;
+    transition: .3s ease all
+}
+
+.swiper-slide-active img,
+.swiper-slide-duplicate-active img {
+    opacity: 1
+}
+
+.swiper-slide-next img,
+.swiper-slide-duplicate-next img {
+    filter: grayscale(100%);
+    opacity: 1;
+}
+
+.swiper-slide-prev img,
+.swiper-slide-duplicate-prev img {
+    filter: grayscale(100%);
+    opacity: 1;
+}
