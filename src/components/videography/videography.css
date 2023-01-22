@@ -132,12 +132,46 @@
 .video__info p
 {
     font-size: 0.90rem;
-    line-height: 23px;
+    line-height: 27px;
 }
 
 
 }
 
+
+
+
+
+
+
+@media only screen and (max-height:1400px)
+{
+
+.video
+{
+    height: 100vh;
+}
+.video__info
+{
+   
+    height: 100vh;
+   
+}
+}
+@media only screen and (max-height:500px)
+{
+
+.video
+{
+    height: 180vh;
+}
+.video__info
+{
+   
+    height: 180vh;
+   
+}
+}
 
 /*------------------  small Tablet  view ------------------*/
 

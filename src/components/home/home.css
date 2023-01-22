@@ -1,16 +1,17 @@
 .home__container
 {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 100vh;
+    margin: 0% 10% 0% 10%;
 
 }
 .img__section
 {
     display: flex;
     justify-content: center;
-    width: 80%;
-    margin: 2% 10% 2% 10%;
+    width: 100%;
+  
 }
 .home__img
 {
@@ -18,3 +19,19 @@
    height: 100%;
    object-fit: cover;
 }
+
+
+
+@media only screen and (max-width:500px)
+{
+    .home__container
+{
+    height: 80vh;
+
+}
+.home__img
+{
+   object-position: left;
+}
+}
+

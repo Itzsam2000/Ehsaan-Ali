@@ -1,3 +1,7 @@
+
+/*------------------------------------ Main Container -------------------------*/
+
+
 .contact__container
 {
     display: flex;
@@ -7,6 +11,7 @@
     width: 100%;
     height:auto;
 }
+/*------------------------------------ contact Section -------------------------*/
 .contact__box
 {
     display: flex;
@@ -18,6 +23,7 @@
     gap: 5px;
     margin: 0% 10% 1% 10%;
 }
+/*------------------------------------ contact left  -------------------------*/
 .contact__left
 {
     display: flex;
@@ -31,6 +37,7 @@
     width: 100%;
     height: 100%;
 }
+/*------------------------------------ Contact right -------------------------*/
 .contact__right
 {
     display: flex;
@@ -117,6 +124,9 @@
      color: white;
     
 }
+
+/*------------------------------------ contact social Boxes-------------------------*/
+
 .contact__socials
 {
     display: flex;
@@ -199,6 +209,9 @@
 }
 
 
+/*------------------------------------ Tablet View -------------------------*/
+/*--------------------------------------------------------------------------*/
+
 
 @media only screen and (max-width:1040px)
 {
@@ -273,8 +286,72 @@
 }
 
 
+/*------------------------------------ Mobile Landscape View  -------------------------*/
+/*--------------------------------------------------------------------------*/
 
 
+@media only screen and (max-height:600px)
+{
+   
+.contact__box
+{
+    height: 140vh;
+}
+.contact__left
+{
+    width: 45%;  
+}
+.contact__right
+{
+    width: 55%;
+}
+.contact__text
+{    
+    font-size: 1.7rem; 
+    letter-spacing: 0.5px;
+}
+.input-field
+{
+    padding: 1rem;
+    font-size: 1rem;
+   
+}
+.message
+{
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+.contact-button
+{
+    font-size: 1rem;
+    padding: 3%;
+  
+}
+
+.social__cards
+{  
+    height: 40vh;
+}
+
+.contact__icons
+{
+    font-size: 1.7rem;
+}
+.app__name
+{
+    font-size: 1.2rem;
+}
+.social__btn
+{
+    font-size: 0.9rem;
+}
+
+}
+
+
+/*------------------------------------ Small Tablet View -------------------------*/
+/*--------------------------------------------------------------------------*/
 
 
 @media only screen and (max-width:800px)
@@ -353,13 +430,8 @@ height: 25vh;
 
 }
 
-
-
-
-
-
-
-
+/*------------------------------------ Mobile View -------------------------*/
+/*--------------------------------------------------------------------------*/
 
 
 @media only screen and (max-width:500px)
@@ -389,7 +461,8 @@ height: 25vh;
 }
 .message
 {
-    font-size: 0.85rem;  
+    font-size: 0.85rem;
+    font-weight: 300;  
 }
 
 .contact-button
@@ -428,9 +501,9 @@ height: 25vh;
 }
 .app__name
 {
-    font-size: 0.9rem;
-    opacity: 0.8;
-    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    letter-spacing: .5px;
 }
 .username
 {
@@ -441,9 +514,133 @@ height: 25vh;
 
 .social__btn
 {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     letter-spacing: 0.5px;
     color: black;
+}
+
+}
+
+/*------------------------------------ Small mobile Potrait View -------------------------*/
+/*--------------------------------------------------------------------------*/
+
+@media only screen and (max-height:350px)
+{
+   
+.contact__box
+{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact__left img
+{
+    height: 100vh;
+
+}
+
+.contact__text
+{    
+    font-size: 1.5rem;  
+    line-height: 35px;
+}
+
+
+.contact-button
+{
+    font-size: 0.8rem;
+    padding: 2%;
+   
+}
+.contact__socials
+{
+   
+    flex-wrap: wrap;
+    gap:5px;
+    width: 80%;
+}
+.social__cards
+{  
+    height: 50vh;
+    margin: 0;
+    border-radius: 0px;
+    flex-basis: 40%;
+
+}
+
+}
+/*------------------------------------ small Mobile View -------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width:360px)
+{
+   
+.contact__box
+{
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.contact__left img
+{
+    height: 40vh;
+
+}
+
+.contact__text
+{    
+    font-size: 1.2rem;  
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+.input-field
+{
+    font-size: 0.7rem;  
+    padding: 3%;
+}
+.message
+{
+    font-size: 0.7rem;
+    font-weight: 200;
+    padding: 8% 1.5% 8% 1.5%;  
+}
+
+.contact-button
+{
+    font-size: 0.7rem;
+    padding: 2%;
+   
+}
+.contact__socials
+{
+       gap:5px;
+}
+
+.social__cards:hover .username
+{
+    font-size: 0.7rem;
+}
+
+.contact__icons
+{
+    font-size: 1.1rem;
+}
+.app__name
+{
+    font-size: 0.7rem;
+    letter-spacing: 1.2px;
+}
+.username
+{
+    font-size: 0.65rem;
+    letter-spacing: 0.5px;
+}
+
+.social__btn
+{
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
 }
 
 }

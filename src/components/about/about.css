@@ -1,24 +1,31 @@
+/*------------------------ Main Container ---------------*/
 
 .about__container
 {
     display: flex;
     width: 100%;
     height: auto;
-   
     font-family: 'Raleway', sans-serif;
     
 }
+
+/*------------------------ Main Container ---------------*/
+
 .about__section
 {
     display: flex;
-    width: 70%;
-    margin: 0 15% 0 15%;
+    width: 80%;
+    margin: 0 10% 0 10%;
     height: 100%;
 }
+
+/*------------------------ Main Container ---------------*/
+
 .about__left
 {
     display: flex;
     width: 50%;
+    transition: 0.8s all ease-in-out;
 }
 .about__img
 {
@@ -26,11 +33,15 @@
     height: 90vh;
     object-fit: cover;
 }
+
+/*------------------------ Main Container ---------------*/
+
 .about__right
 {
     display: flex;
     flex-direction: column;
     width: 40%;
+    transition: 0.8s all ease-in-out;
     margin: 0 5% 0 5%;
     justify-content: center;
 }
@@ -53,6 +64,9 @@
     width: 100%;
     gap: 15px;
 }
+
+/*------------------------ Main Container ---------------*/
+
 .about__btns
 {
     display: flex;
@@ -66,7 +80,7 @@
     width: 30%;
     font-family: 'Raleway', sans-serif;
     padding: 12px 0 12px 0;
-    transition: 0.4s all linear;
+    transition: 0.8s all ease-in-out;
 }
 .about__btns:nth-child(2)
 {
@@ -86,6 +100,206 @@
 }
 
 
+/*-------------------------- Tablet View -------------------*/
+/*---------------------------------------------------------*/
 
 @media only screen and (max-width:960px)
-{}
+{
+    
+.about__right
+{  
+    width: 45%;
+    margin: 0 0% 0 5%;
+}
+.about__right h1
+{
+    font-size: 1.6rem;
+}
+.about__right p
+{
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+.about__btns
+{
+    font-size: 0.8rem;
+    width: 35%;
+    padding: 10px 0 10px 0;
+}
+
+}
+
+/*-------------------------- Small Tablet View -------------------*/
+/*----------------------------------------------------------------*/
+
+@media only screen and (max-width:780px)
+{
+.about__section
+{
+    flex-direction: column;
+    gap: 20px;
+}
+.about__left
+{
+    width: 100%;
+}
+.about__img
+{
+ 
+    height: 90vh;
+}
+.about__right
+{
+    width: 100%;
+    margin: 0;
+}
+.about__right h1
+{
+    font-size: 1.8rem;
+}
+.about__right p
+{
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.about__btns
+{
+    font-size: 1rem;
+    width: 30%;
+    padding: 12px 0 12px 0;
+}
+
+}
+
+/*-------------------------- Mobile Landscape View -------------------*/
+/*-----------------------------------------------------------------*/
+
+
+@media only screen and (max-height:600px)
+{
+.about__section
+{
+    gap: 10px;
+}
+.about__left
+{
+    align-self:center;
+}
+.about__img
+{
+    height: 130vh;
+}
+
+.about__right h1
+{
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+.about__right p
+{
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.about__btns
+{
+    font-size: 0.9rem;
+    width: 45%;
+    padding: 10px 0 10px 0;
+}
+
+}
+
+/*-------------------------- Mobile View -------------------*/
+/*----------------------------------------------------------*/
+
+@media only screen and (max-width:500px)
+{
+.about__section
+{
+    gap: 30px;
+    margin: 10% 10% 2% 10%;
+}
+.about__img
+{
+    height: 50vh;
+}
+.about__right h1
+{
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+}
+.about__btns
+{
+    font-size: 0.9rem;
+    width: 35%;
+    padding: 10px 0 10px 0;
+}
+
+}
+/*-------------------------- Mobile Landscape View -------------------*/
+/*-----------------------------------------------------------------*/
+
+
+@media only screen and (max-height:350px)
+{
+.about__section
+{
+    gap: 20px;
+}
+
+.about__img
+{
+    height: 230vh;
+}
+.about__right h1
+{
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+.about__right p
+{
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+.about__btns
+{
+    width: 25%;
+    font-size: 0.8rem;
+}
+}
+
+
+/*-------------------------- Small Mobile View -------------------*/
+/*----------------------------------------------------------------*/
+
+@media only screen and (max-width:380px)
+{
+.about__section
+{
+    gap: 30px;
+}
+.about__img
+{
+    height: 60vh;
+}
+.about__right h1
+{
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+.about__right p
+{
+    line-height: 27px;
+    font-size: 0.85rem;
+}
+.about__btns
+{
+    font-size: 0.7rem;
+    width: 35%;
+    padding: 7px 0 7px 0;
+}
+
+}
