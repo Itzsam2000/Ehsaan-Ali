@@ -4,6 +4,7 @@ import contact__img from "../assets/contact/contact-img.jpg"
 import Footer from "../footer/footer"
 import { BsWhatsapp, BsInstagram, } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 export default function Contact() {
     return (
@@ -11,7 +12,12 @@ export default function Contact() {
 
             {/*------------------------Main Container ----------------*/}
 
-            <div className='contact__container'>
+            <motion.div
+                initial={{ y: '100%' }}
+                animate={{ y: '0%' }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                exit={{ opacity: 0 }}
+                className='contact__container'>
 
                 {/*------------------------ Contact Section  ----------------*/}
 
@@ -26,7 +32,12 @@ export default function Contact() {
                     {/*------------------------Contact Right ----------------*/}
 
 
-                    <div className="contact__right">
+                    <motion.div
+                        initial={{ y: '-10%' }}
+                        whileInView={{ y: '0%' }}
+                        transition={{ duration: 1, ease: 'easeInOut' }}
+                        exit={{ opacity: 1 }}
+                        className="contact__right">
                         <div className="contact__text">
                             <span>Have a question?
                                 <br /> Contact me!</span>
@@ -53,7 +64,7 @@ export default function Contact() {
 
                         {/*------------------------End of Right side ----------------*/}
 
-                    </div>
+                    </motion.div>
 
 
                     {/*------------------------End of  Contact Section ----------------*/}
@@ -67,7 +78,7 @@ export default function Contact() {
 
                     {/*------------------------Instagram ----------------*/}
 
-                    <a href="/" className="social__cards" target='_blank'>
+                    <a href="https://www.instagram.com/ehsaan_mirzaa/" className="social__cards" target='_blank'>
                         <BsInstagram className='contact__icons' />
                         <div className="app__name">Instagram</div>
                         <div className="username">ehsan__mirza</div>
@@ -77,7 +88,7 @@ export default function Contact() {
 
                     {/*------------------------WhatsApp ----------------*/}
 
-                    <a href="/" className="social__cards" target='_blank'>
+                    <a href="https://wa.me/+923490576948?text=Hi Ehsan! comming direct from your personal Website." className="social__cards" target='_blank'>
                         <BsWhatsapp className='contact__icons' />
                         <div className="app__name">WhatsApp</div>
                         <div className="username">+92 3400576948</div>
@@ -86,10 +97,10 @@ export default function Contact() {
 
                     {/*------------------------Gmail ----------------*/}
 
-                    <a href="mailto:itzsamhere20@gmail.com" className="social__cards">
+                    <a href="mailto:ehsanalisudio@gmail.com" className="social__cards">
                         <AiOutlineMail className='contact__icons' />
                         <div className="app__name">Gmail</div>
-                        <div className="username">itzehsan@gmail.com</div>
+                        <div className="username">ehsanalisudio@gmail.com</div>
                         <div className="social__btn">Send mail</div>
                     </a>
 
@@ -99,7 +110,7 @@ export default function Contact() {
 
                 {/*------------------------End of Main Container ----------------*/}
 
-            </div>
+            </motion.div>
 
 
 

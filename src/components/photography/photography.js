@@ -11,14 +11,22 @@ import img4 from "../assets/photography/image4.jpg"
 import img5 from "../assets/photography/image5.jpg"
 import img6 from "../assets/photography/image6.jpg"
 import img7 from "../assets/photography/image7.jpg"
+import { motion } from 'framer-motion';
 
 // import required modules
 import { Autoplay, Navigation } from "swiper";
 export default function Photography() {
+
     return (
 
         <>
-            <div className='photography__container'>
+            <motion.div
+                initial={{ y: '100%' }}
+                animate={{ y: '0%' }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                exit={{ opacity: 0 }}
+                className='photography__container'>
+
                 <Swiper
                     autoplay={true}
                     navigation={true}
@@ -33,43 +41,46 @@ export default function Photography() {
                         "--swiper-navigation-size": "40px",
                     }}
 
+
+
                 >
 
 
 
                     <SwiperSlide>
-                        <img src={img1} alt="slide image" className='slider__img' />
+                        <img src={img1} alt="1st side image " className='slider__img' />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={img2} alt="slide image" className='slider__img' />
+                        <img src={img2} alt="1st side image " className='slider__img' />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={img3} alt="slide image" className='slider__img' />
+                        <img src={img3} alt="=1st side image " className='slider__img' />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={img4} alt="slide image" className='slider__img' />
+                        <img src={img4} alt="1st side image " className='slider__img' />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={img5} alt="slide image" className='slider__img' />
+                        <img src={img5} alt="1st side image " className='slider__img' />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={img6} alt="slide image" className='slider__img' />
+                        <img src={img6} alt="1st side image " className='slider__img' />
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <img src={img7} alt="slide image" className='slider__img' />
+                        <img src={img7} alt="1st side image " className='slider__img' />
                     </SwiperSlide>
 
                 </Swiper>
 
-            </div>
+            </motion.div>
 
             <Footer />
         </>
     )
 }
+

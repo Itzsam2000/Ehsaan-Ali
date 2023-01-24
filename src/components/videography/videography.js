@@ -2,13 +2,19 @@ import React from 'react'
 import "../videography/videography.css"
 import Footer from '../footer/footer'
 import video1 from "../assets/videography/video1.mp4"
+import { motion } from 'framer-motion'
 export default function Videography() {
     return (
 
         <>
             {/*-------------------Main Container-----------------*/}
 
-            <div className='videography__container'>
+            <motion.div
+                initial={{ y: '100%' }}
+                animate={{ y: '0%' }}
+                transition={{ duration: 1.3, ease: 'easeOut' }}
+                exit={{ opacity: 0 }}
+                className='videography__container'>
 
 
                 {/*-------------------Video Heading -----------------*/}
@@ -43,7 +49,12 @@ export default function Videography() {
 
                         {/*------------------- 1st Info side-----------------*/}
 
-                        <div className="video__info">
+                        <motion.div
+                            initial={{ y: '-10%' }}
+                            whileInView={{ y: '0%' }}
+                            transition={{ duration: 1, ease: 'easeInOut' }}
+                            exit={{ opacity: 1 }}
+                            className="video__info">
 
                             <h3>
                                 The Man and his Vietnamese Brides
@@ -59,7 +70,7 @@ export default function Videography() {
                             <br />
                             <h4>
                                 Watch
-                                <a href='/' target='_blank'>Here</a>
+                                <a href='https://www.youtube.com/watch?v=YDhXbJN2iBk' target='_blank'>Here</a>
                             </h4>
                             <br />
                             <br />
@@ -72,7 +83,7 @@ export default function Videography() {
                                 who his customers are, and what they’re looking for in a life partner.
                             </p>
 
-                        </div>
+                        </motion.div>
 
                     </div>
 
@@ -104,7 +115,12 @@ export default function Videography() {
 
                         {/*-------------------2nd Info side-----------------*/}
 
-                        <div className="video__info">
+                        <motion.div
+                            initial={{ y: '-10%' }}
+                            whileInView={{ y: '0%' }}
+                            transition={{ duration: 1, ease: 'easeInOut' }}
+                            exit={{ opacity: 1 }}
+                            className="video__info">
 
                             <h3>
                                 The Man and his Vietnamese Brides
@@ -120,7 +136,7 @@ export default function Videography() {
                             <br />
                             <h4>
                                 Watch
-                                <a href='/' target='_blank'>Here</a>
+                                <a href='https://www.youtube.com/watch?v=YDhXbJN2iBk' target='_blank'>Here</a>
                             </h4>
                             <br />
                             <br />
@@ -133,7 +149,7 @@ export default function Videography() {
                                 who his customers are, and what they’re looking for in a life partner.
                             </p>
 
-                        </div>
+                        </motion.div>
 
                     </div>
 
@@ -165,7 +181,12 @@ export default function Videography() {
 
                         {/*------------------- 3rd Info side-----------------*/}
 
-                        <div className="video__info">
+                        <motion.div
+                            initial={{ y: '-10%' }}
+                            whileInView={{ y: '0%' }}
+                            transition={{ duration: 1, ease: 'easeInOut' }}
+                            exit={{ opacity: 1 }}
+                            className="video__info">
 
                             <h3>
                                 The Man and his Vietnamese Brides
@@ -181,7 +202,7 @@ export default function Videography() {
                             <br />
                             <h4>
                                 Watch
-                                <a href='/' target='_blank'>Here</a>
+                                <a href='https://www.youtube.com/watch?v=YDhXbJN2iBk' target='_blank'>Here</a>
                             </h4>
                             <br />
                             <br />
@@ -194,7 +215,7 @@ export default function Videography() {
                                 who his customers are, and what they’re looking for in a life partner.
                             </p>
 
-                        </div>
+                        </motion.div>
 
                     </div>
 
@@ -232,7 +253,12 @@ export default function Videography() {
 
                         {/*------------------- 4th Info side-----------------*/}
 
-                        <div className="video__info">
+                        <motion.div
+                            initial={{ y: '-10%' }}
+                            whileInView={{ y: '0%' }}
+                            transition={{ duration: 1, ease: 'easeInOut' }}
+                            exit={{ opacity: 1 }}
+                            className="video__info">
 
                             <h3>
                                 The Man and his Vietnamese Brides
@@ -248,7 +274,7 @@ export default function Videography() {
                             <br />
                             <h4>
                                 Watch
-                                <a href='/' target='_blank'>Here</a>
+                                <a href='https://www.youtube.com/watch?v=YDhXbJN2iBk' target='_blank'>Here</a>
                             </h4>
                             <br />
                             <br />
@@ -261,7 +287,7 @@ export default function Videography() {
                                 who his customers are, and what they’re looking for in a life partner.
                             </p>
 
-                        </div>
+                        </motion.div>
 
                     </div>
 
@@ -297,7 +323,12 @@ export default function Videography() {
 
                         {/*------------------- 5th Info side-----------------*/}
 
-                        <div className="video__info">
+                        <motion.div
+                            initial={{ y: '-10%' }}
+                            whileInView={{ y: '0%' }}
+                            transition={{ duration: 1, ease: 'easeInOut' }}
+                            exit={{ opacity: 1 }}
+                            className="video__info">
 
                             <h3>
                                 The Man and his Vietnamese Brides
@@ -313,7 +344,7 @@ export default function Videography() {
                             <br />
                             <h4>
                                 Watch
-                                <a href='/' target='_blank'>Here</a>
+                                <a href='https://www.youtube.com/watch?v=YDhXbJN2iBk' target='_blank'>Here</a>
                             </h4>
                             <br />
                             <br />
@@ -326,7 +357,7 @@ export default function Videography() {
                                 who his customers are, and what they’re looking for in a life partner.
                             </p>
 
-                        </div>
+                        </motion.div>
 
                     </div>
 
@@ -362,8 +393,12 @@ export default function Videography() {
 
                         {/*------------------- 6th Info side-----------------*/}
 
-                        <div className="video__info">
-
+                        <motion.div
+                            initial={{ y: '-10%' }}
+                            whileInView={{ y: '0%' }}
+                            transition={{ duration: 1, ease: 'easeInOut' }}
+                            exit={{ opacity: 1 }}
+                            className="video__info">
                             <h3>
                                 The Man and his Vietnamese Brides
                             </h3>
@@ -378,7 +413,7 @@ export default function Videography() {
                             <br />
                             <h4>
                                 Watch
-                                <a href='/' target='_blank'>here</a>
+                                <a href='https://www.youtube.com/watch?v=YDhXbJN2iBk' target='_blank'>here</a>
                             </h4>
                             <br />
                             <br />
@@ -391,7 +426,7 @@ export default function Videography() {
                                 who his customers are, and what they’re looking for in a life partner.
                             </p>
 
-                        </div>
+                        </motion.div>
 
 
 
@@ -405,7 +440,7 @@ export default function Videography() {
 
                 {/*-------------------End of Main Container-----------------*/}
 
-            </div>
+            </motion.div>
 
             {/*-------------------Footer-----------------*/}
 

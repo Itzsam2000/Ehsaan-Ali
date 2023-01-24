@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../navbar/navbar.css"
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { BsInstagram, BsFacebook, BsYoutube, BsWhatsapp } from "react-icons/bs"
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
 
@@ -18,20 +18,20 @@ export default function Navbar() {
 
             {/*------------------    Logo Section     ------------*/}
 
-            <div className="nav__logo">
+            <a className="nav__logo" href='/'>
                 <h5>Ehsaan Ali</h5>
                 <span>Photographer & Videographer</span>
-            </div>
+            </a>
 
             {/*------------------    Links Section     ------------*/}
 
             <div className="nav__links">
                 <ul>
-                    <li> <Link to="/" className='links'>Home</Link></li>
-                    <li> <Link to="about" className='links'>About</Link></li>
-                    <li> <Link to="photography" className='links'>Photography</Link></li>
-                    <li> <Link to="videography" className='links'>Videography </Link></li>
-                    <li> <Link to="contact" className='links'>Contact </Link></li>
+                    <li> <NavLink to="/" className='links' >Home</NavLink></li>
+                    <li> <NavLink to="about" className='links' >About</NavLink></li>
+                    <li> <NavLink to="photography" className='links'>Photography</NavLink></li>
+                    <li> <NavLink to="videography" className='links'>Videography </NavLink></li>
+                    <li> <NavLink to="contact" className='links'>Contact </NavLink></li>
                 </ul>
             </div>
 
@@ -56,10 +56,10 @@ export default function Navbar() {
                     <li><Link to="contact" className='mobile__links__a' > Contact </Link> </li>
                 </ul>
                 <div className="mobile__links__icons">
-                    <a href='/' title='Instagram'>  <BsInstagram /> </a >
-                    <a href='/' title='Facebook'>  <BsFacebook /></a>
-                    <a href='/' title='Youtube'>   <BsYoutube /> </a>
-                    <a href='/' title='WhatsApp'>   <BsWhatsapp /> </a>
+                    <a href="https://www.instagram.com/ehsaan_mirzaa/" target='_blank'>  <BsInstagram /> </a >
+                    <a href="https://www.facebook.com/profile.php?id=100010523226400" target='_blank'>  <BsFacebook /></a>
+                    <a href='https://www.youtube.com/@ehsaanalistudio/featured' target='_blank' title='Youtube'>   <BsYoutube /> </a>
+                    <a href='https://wa.me/+923490576948?text=Hi Ehsan! comming direct from your personal Website.' target='_blank' title='WhatsApp'>   <BsWhatsapp /> </a>
 
                 </div>
             </div>

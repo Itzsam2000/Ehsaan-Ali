@@ -8,22 +8,25 @@ import About from './components/about/about'
 import Photography from './components/photography/photography'
 import Videography from './components/videography/videography'
 import Contact from "./components/contact/contact"
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="about" element={<About />} />
-          <Route path='/' element={<Home />} />
-          <Route path="photography" element={<Photography />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="videography" element={<Videography />} />
-        </Routes>
+    <AnimatePresence>
+      <div>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="about" element={<About />} activeStyle={{ color: 'white' }} />
+            <Route path='/' element={<Home />} />
+            <Route path="photography" element={<Photography />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="videography" element={<Videography />} />
+          </Routes>
 
-      </BrowserRouter>
-    </div>
+        </BrowserRouter>
+      </div>
+    </AnimatePresence>
   );
 }
 

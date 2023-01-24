@@ -98,6 +98,7 @@
 .video
 {
     height: 140vh;
+    z-index: 99;
 }
 .video__info
 {
@@ -238,7 +239,7 @@
 
     .video__section
     {
-        margin-top: 20%;
+        margin-top: 10%;
     }
     .video__data:nth-child(even)
     {

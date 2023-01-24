@@ -4,8 +4,12 @@
 
 
 /*-----------------   Main  Container ----------------*/
-
-
+.nav__links a.active
+{
+    border-bottom: 1px solid  #181818;
+    font-weight: 500;
+    
+}
 .nav__container
 {
     display: flex;
@@ -20,8 +24,12 @@
 .nav__logo
 {   
     display: flex;
+    width: max-content;
+    align-self: center;
+    margin-bottom: 2%;
     flex-direction: column;
-    width: 100%;
+    text-decoration: none;
+    color: #181818;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -77,6 +85,7 @@
 {
     text-decoration: none;
     color: #181818;
+    padding-bottom: 5px;
 }
 
 

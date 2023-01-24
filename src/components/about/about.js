@@ -2,13 +2,20 @@ import React from 'react'
 import "../about/about.css"
 import myimg from "../assets/about/myimg.jpg"
 import Footer from "../footer/footer"
+import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 export default function About() {
     return (
         <>
 
             {/*------------------------Main Container ----------------*/}
 
-            <div className='about__container'>
+            <motion.div
+                initial={{ y: '100%' }}
+                animate={{ y: '0%' }}
+                transition={{ duration: 1, ease: 'easeOut' }}
+                exit={{ opacity: 0 }}
+                className='about__container'>
 
                 {/*------------------------About Section ----------------*/}
 
@@ -22,7 +29,12 @@ export default function About() {
 
                     {/*------------------------About Right   ----------------*/}
 
-                    <div className="about__right">
+                    <motion.div
+                        initial={{ y: '-5%' }}
+                        animate={{ y: '0%' }}
+                        transition={{ duration: 0.7, ease: 'easeOut' }}
+                        exit={{ opacity: 1 }}
+                        className="about__right">
                         <h1>
                             About Ehsaan Ali
                         </h1>
@@ -38,7 +50,7 @@ export default function About() {
 
                             {/*------------------------Paragraph no 2 ----------------*/}
 
-                            Stories of migration, sexuality, and the creative process interest me the most. I believe in the need for more representation and inclusion, and have an academic background in culture and politics.
+                            Stories of migration, fashion, and the creative process interest me the most. I believe in the need for more representation and inclusion, and have an academic background in culture and politics.
 
                             <br />
                             <br />
@@ -54,22 +66,21 @@ export default function About() {
                         <div className="about__btn__section">
 
                             {/*------------------------Work Button  ----------------*/}
-
-                            <button className="about__btns">
+                            <Link to='/videography' className="about__btns">
                                 My Work
-                            </button>
+                            </Link>
 
                             {/*------------------------ Contact Button  ----------------*/}
 
-                            <button className="about__btns">
+                            <Link to="/contact/top" className="about__btns">
                                 Contact
-                            </button>
+                            </Link>
 
                         </div>
 
                         {/*------------------------ End of Right Side ----------------*/}
 
-                    </div>
+                    </motion.div>
 
                     {/*------------------------End of Contact Section  ----------------*/}
 
@@ -77,7 +88,7 @@ export default function About() {
 
                 {/*------------------------ End of Main Container ----------------*/}
 
-            </div>
+            </motion.div>
 
 
             {/*------------------------ About  Footer  ----------------*/}

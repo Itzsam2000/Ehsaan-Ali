@@ -10,15 +10,15 @@ export default function Footer() {
 
 
             <div className='email'>
-                <a href="mailto:mirzasameer1322@gmail.com"> imehsanali@gmail.com </a>
+                <a href="mailto:ehsaanalistudio@gmail.com"> ehsaanalistudio@gmail.com </a>
             </div>
 
             {/*----------------   Links Section ----------- */}
 
 
             <div className="footer__links">
-                <a href=""> <BsFacebook /> </a>
-                <a href=""> <BsInstagram /> </a>
+                <a href="https://www.facebook.com/profile.php?id=100010523226400" target='_blank'> <BsFacebook /> </a>
+                <a href="https://www.instagram.com/ehsaan_mirzaa/" target='_blank'> <BsInstagram /> </a>
                 <a href=""> <BsLinkedin /> </a>
             </div>
 
